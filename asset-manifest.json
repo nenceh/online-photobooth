@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/online-photobooth/static/css/main.52446e9c.css",
+    "main.js": "/online-photobooth/static/js/main.7243cf98.js",
+    "index.html": "/online-photobooth/index.html",
+    "main.52446e9c.css.map": "/online-photobooth/static/css/main.52446e9c.css.map",
+    "main.7243cf98.js.map": "/online-photobooth/static/js/main.7243cf98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52446e9c.css",
+    "static/js/main.7243cf98.js"
+  ]
+}
