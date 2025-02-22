@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/online-photobooth/static/css/main.68655664.css",
-    "main.js": "/online-photobooth/static/js/main.18dd40c3.js",
+    "main.css": "/online-photobooth/static/css/main.e6fac284.css",
+    "main.js": "/online-photobooth/static/js/main.f829716a.js",
     "index.html": "/online-photobooth/index.html",
-    "main.68655664.css.map": "/online-photobooth/static/css/main.68655664.css.map",
-    "main.18dd40c3.js.map": "/online-photobooth/static/js/main.18dd40c3.js.map"
+    "main.e6fac284.css.map": "/online-photobooth/static/css/main.e6fac284.css.map",
+    "main.f829716a.js.map": "/online-photobooth/static/js/main.f829716a.js.map"
   },
   "entrypoints": [
-    "static/css/main.68655664.css",
-    "static/js/main.18dd40c3.js"
+    "static/css/main.e6fac284.css",
+    "static/js/main.f829716a.js"
   ]
 }
