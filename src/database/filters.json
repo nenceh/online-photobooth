@@ -1,0 +1,22 @@
+[
+    {
+        "label"         :   "None",
+        "id"            :   "none",
+        "value"         :   "none"
+    },
+    {
+        "label"         :   "Grayscale",
+        "id"            :   "grayscale",
+        "value"         :   "grayscale(100%)"
+    },
+    {
+        "label"         :   "Sepia",
+        "id"            :   "sepia",
+        "value"         :   "sepia(100%)"
+    },
+    {
+        "label"         :   "Vintage",
+        "id"            :   "vintage",
+        "value"         :   "grayscale(100%) contrast(120%) brightness(110%) sepia(30%) hue-rotate(10deg)"
+    }
+]

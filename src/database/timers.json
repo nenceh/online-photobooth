@@ -1,0 +1,17 @@
+[
+    {
+        "label"         :   "3 sec",
+        "id"            :   "3-sec",
+        "value"         :   3
+    },
+    {
+        "label"         :   "5 sec",
+        "id"            :   "5-sec",
+        "value"         :   5
+    },
+    {
+        "label"         :   "10 sec",
+        "id"            :   "10-sec",
+        "value"         :   10
+    }
+]

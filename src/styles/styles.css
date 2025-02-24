@@ -1,0 +1,647 @@
+@media screen and (max-width: 843px) {
+  .photobooth .video-container {
+    min-height: 200px;
+    max-height: calc(100dvh - 220px);
+  }
+  .photobooth .video-container .customize {
+    justify-content: center;
+    gap: 24px;
+    padding: 8px 8px 12px;
+  }
+  .photobooth .video-container .customize .container {
+    width: 100%;
+  }
+  .photobooth .video-container .customize .container > * {
+    width: 100%;
+    max-width: 140px;
+  }
+  .photobooth .video-container .customize .container:first-child {
+    justify-content: flex-end;
+  }
+  .photobooth .video-container .customize .container .heading {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-family: "Lato", serif;
+  }
+  .photobooth .video-container .customize .container select {
+    border-radius: 4px;
+    height: 40px;
+    outline: none;
+    width: 100%;
+    padding: 0 8px;
+    color: black;
+  }
+  .photobooth .video-container .customize .container select, .photobooth .video-container .customize .container select option {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    font-family: "Lato", serif;
+  }
+  .photobooth .video-container .customize .container select, .photobooth .video-container .customize .container select:active {
+    background-color: white;
+  }
+  .photobooth .video-container.load {
+    width: 100%;
+  }
+  .photobooth .capture {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20px;
+    max-height: 100%;
+  }
+  .photobooth .capture .container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, calc((100% + 20px) / 2 - 20px));
+    grid-template-rows: auto;
+    width: 100%;
+    height: calc((100% - 96px + 20px) / 2 - 20px);
+    min-height: 40px;
+  }
+  .photobooth .capture .container figure {
+    min-height: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+  }
+  .photobooth .capture .control {
+    position: absolute;
+    bottom: 20px;
+    justify-self: center;
+  }
+  .photobooth .capture .control .btn-primary.btn-icon {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0px;
+    font-family: "Lato", serif;
+    width: 80px;
+    height: 80px;
+  }
+  .photobooth .capture .control .btn-primary.btn-icon i.fa {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 2px;
+  }
+  .photobooth .capture .control .btn-primary.btn-icon:not(:disabled):hover i.fa {
+    font-size: 44px;
+    line-height: 44px;
+  }
+}
+@media screen and (min-width: 844px) {
+  .photobooth {
+    margin: 0 80px;
+  }
+  .photobooth .video-container .video-temp {
+    max-width: 100%;
+  }
+  .photobooth .video-container .customize {
+    gap: 40px;
+    padding: 16px 24px 24px;
+  }
+  .photobooth .video-container .customize .container {
+    width: calc((100% - 40px) / 2 + 40px);
+  }
+  .photobooth .video-container .customize .container .heading {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0px;
+    font-family: "Lato", serif;
+  }
+  .photobooth .video-container .customize .container ul {
+    gap: 16px;
+  }
+  .photobooth .video-container .customize .container ul label.btn-secondary {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-family: "Lato", serif;
+    padding: 4px 12px;
+  }
+  .photobooth .capture {
+    gap: 40px;
+    height: 160px;
+  }
+  .photobooth .capture .container {
+    gap: 20px;
+    max-height: 200px;
+    width: calc((100% - 40px) / 2 + 40px);
+  }
+  .photobooth .capture .container figure {
+    max-width: calc((100% + 20px) / 2 - 20px);
+    max-height: 80px;
+  }
+  .photobooth .capture .btn-primary.btn-icon {
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 72px;
+    letter-spacing: 0px;
+    font-family: "Lato", serif;
+    width: 120px;
+    height: 120px;
+    transition: box-shadow 0.2s ease;
+  }
+  .photobooth .capture .btn-primary.btn-icon i.fa {
+    font-size: 52px;
+    line-height: 52px;
+    margin-bottom: 4px;
+  }
+  .photobooth .capture .btn-primary.btn-icon:not(:disabled):hover i.fa {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}
+.photobooth {
+  height: 100dvh;
+}
+
+.video {
+  width: 100%;
+}
+.video, .video-temp {
+  border-radius: 8px 8px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.video-temp {
+  background-color: orange;
+}
+.video-container {
+  justify-self: center;
+  position: relative;
+  aspect-ratio: 3/2;
+  line-height: 0;
+}
+.video-container.load {
+  width: 100%;
+}
+.video-container.load video, .video-container.load .customize {
+  opacity: 0;
+  display: none;
+}
+.video-container .video-temp {
+  opacity: 0;
+  justify-self: center;
+}
+.video-container .flash {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  animation: flash 0.8s ease-out;
+}
+@keyframes flash {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.video-container .customize {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.video-container .customize .container {
+  display: flex;
+}
+.video-container .customize .container > * {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.video-container .customize .container .heading {
+  color: white;
+  cursor: default;
+}
+.video-container .customize .container select, .video-container .customize .container option {
+  cursor: pointer;
+}
+.video-container .customize .container ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+.video-container .customize .container ul input[type=radio] {
+  display: none;
+}
+.video-container .customize .container ul input[type=radio]:checked + label {
+  background-color: orange;
+}
+
+.capture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  cursor: default;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+}
+.capture .control {
+  width: -moz-fit-content;
+  width: fit-content;
+  animation: show 0.5s ease-out;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.capture .control .btn-primary.btn-icon:not(:disabled):hover {
+  background-color: gray;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.capture .control .btn-primary.btn-icon:disabled {
+  cursor: not-allowed;
+}
+.capture .control .btn-primary.btn-icon:disabled.usermediaerror, .capture .control .btn-primary.btn-icon:disabled.capturing {
+  background-color: red;
+}
+.capture .control i.fa {
+  transition: font-size 0.2s ease;
+}
+.capture .container {
+  display: flex;
+}
+.capture .container figure {
+  line-height: 0;
+  background-color: black;
+  aspect-ratio: 3/2;
+}
+.capture .container figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 3/2;
+}
+
+@media screen and (min-width: 844px) {
+  .photobooth {
+    margin: 0 80px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .photobooth {
+    margin: 0 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: cornflowerblue;
+}
+
+.btn-icon, .btn-secondary, .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s, outline 0.3s;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn-icon i.fa, .btn-secondary i.fa, .btn-primary i.fa {
+  transition: color 0.2s;
+}
+
+.btn-primary {
+  gap: 8px;
+  text-decoration: none;
+}
+.btn-primary svg {
+  fill: #FFF;
+}
+.btn-primary:active {
+  background: #66A792;
+  color: #FFF;
+}
+
+.btn-secondary {
+  gap: 8px;
+  outline-offset: -1px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+.btn-secondary svg {
+  fill: #1B7C5D;
+}
+
+.btn-icon {
+  line-height: 0;
+  outline-offset: -2px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100px;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+}
+.btn-icon svg, .btn-icon i.fa {
+  fill: white;
+  color: white;
+}
+.btn-icon:active {
+  background-color: #B7C5C8;
+}
+.btn-icon:active svg {
+  fill: #EBB55F;
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.captured-photo {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+
+/* Countdown Timer */
+.countdown {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: red;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: countdown-animation 0.5s ease-in-out alternate infinite;
+}
+
+/* Photobooth Strip */
+.photobooth-strip {
+  width: 150px; /* Adjust as needed */
+  max-width: 300px; /* Prevents it from being too large */
+  height: auto; /* Keeps the aspect ratio */
+  display: block;
+  margin: 10px auto; /* Centers the image */
+}
+
+/* Photobooth Layout */
+.photo-booth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 10px;
+}
+
+/* live cam*/
+.video-feed {
+  width: 600px;
+  height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover; /* Prevents weird stretching */
+  transform: scaleX(-1); /* Mirror effect */
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+/* Animation */
+.animate {
+  animation: pop 0.5s ease-in-out alternate infinite;
+}
+
+/* Photo Strip Preview */
+.photo-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.photo-preview canvas {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.photo-preview img {
+  width: 100%;
+  height: auto; /* Ensures correct aspect ratio */
+  max-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix Photo Strip Squishing */
+.photo-strip {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix Capture Button Placement */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+  position: relative; /* Ensures it stays below */
+  z-index: 10; /* Keeps it above other elements */
+  width: 100%;
+}
+
+/* General Button Styling */
+/* Color Picker Options */
+.color-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Fix Layout Between Camera and Photo Strip */
+.photo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* Increased spacing */
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Fix Photo Strip Thumbnails */
+.preview-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  min-width: 120px;
+  margin-left: 20px;
+  margin-top: -120px; /* Adjust this value to raise the first photo */
+}
+
+.side-preview {
+  width: 160px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensure image fills the space */
+  border-radius: 8px;
+  border: 2px solid #000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+/* Hide Captured Image Under Camera */
+.hidden {
+  display: none !important;
+}
+
+/* Footer Styling */
+footer {
+  display: block;
+  padding: 10px;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Footer Link */
+footer a {
+  color: pink;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid pink;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the Footer Stays at the Bottom */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Fix Horizontal Scrolling Issue */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .video-feed {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 4/3; /* Lock to 4:3 aspect ratio */
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: scaleX(-1); /* Mirror effect */
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .controls, .filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .controls button {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+/* Animations */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+@keyframes countdown-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}/*# sourceMappingURL=styles.css.map */
