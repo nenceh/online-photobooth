@@ -1,14 +1,37 @@
 {
   "files": {
-    "main.css": "/online-photobooth/static/css/main.31de6677.css",
-    "main.js": "/online-photobooth/static/js/main.5834d5dd.js",
-    "static/media/raf.png": "/online-photobooth/static/media/raf.7248790c948f8bcca84a.png",
+    "main.css": "/online-photobooth/static/css/main.c8e310a1.css",
+    "main.js": "/online-photobooth/static/js/main.14322ad5.js",
+    "static/js/434.cfb61e3e.chunk.js": "/online-photobooth/static/js/434.cfb61e3e.chunk.js",
+    "static/js/513.5d097725.chunk.js": "/online-photobooth/static/js/513.5d097725.chunk.js",
+    "static/js/384.de2345ff.chunk.js": "/online-photobooth/static/js/384.de2345ff.chunk.js",
+    "static/js/527.db753a15.chunk.js": "/online-photobooth/static/js/527.db753a15.chunk.js",
+    "static/js/257.7c2d0570.chunk.js": "/online-photobooth/static/js/257.7c2d0570.chunk.js",
+    "static/js/274.391bea63.chunk.js": "/online-photobooth/static/js/274.391bea63.chunk.js",
+    "static/js/483.aa367bd8.chunk.js": "/online-photobooth/static/js/483.aa367bd8.chunk.js",
+    "static/js/876.55d8c013.chunk.js": "/online-photobooth/static/js/876.55d8c013.chunk.js",
+    "static/js/746.a90d7e64.chunk.js": "/online-photobooth/static/js/746.a90d7e64.chunk.js",
+    "static/js/753.a90c9ad4.chunk.js": "/online-photobooth/static/js/753.a90c9ad4.chunk.js",
+    "static/js/0.3024d2d3.chunk.js": "/online-photobooth/static/js/0.3024d2d3.chunk.js",
+    "static/js/871.64761225.chunk.js": "/online-photobooth/static/js/871.64761225.chunk.js",
+    "static/js/67.e22f737e.chunk.js": "/online-photobooth/static/js/67.e22f737e.chunk.js",
+    "static/js/664.97dd77e1.chunk.js": "/online-photobooth/static/js/664.97dd77e1.chunk.js",
+    "static/js/417.718c2b06.chunk.js": "/online-photobooth/static/js/417.718c2b06.chunk.js",
+    "static/js/790.ef36a5a0.chunk.js": "/online-photobooth/static/js/790.ef36a5a0.chunk.js",
+    "static/js/58.acceb7b9.chunk.js": "/online-photobooth/static/js/58.acceb7b9.chunk.js",
+    "static/js/369.bebda738.chunk.js": "/online-photobooth/static/js/369.bebda738.chunk.js",
+    "static/js/424.e4d03747.chunk.js": "/online-photobooth/static/js/424.e4d03747.chunk.js",
+    "static/js/943.a7186279.chunk.js": "/online-photobooth/static/js/943.a7186279.chunk.js",
+    "static/media/4.png": "/online-photobooth/static/media/4.854ae385bfaef8767d53.png",
+    "static/media/1.png": "/online-photobooth/static/media/1.0e983721e404250a7ec8.png",
+    "static/media/2.png": "/online-photobooth/static/media/2.a30ddab32638608ef4a4.png",
+    "static/media/3.png": "/online-photobooth/static/media/3.46e755723c115e4a1766.png",
     "index.html": "/online-photobooth/index.html",
-    "main.31de6677.css.map": "/online-photobooth/static/css/main.31de6677.css.map",
-    "main.5834d5dd.js.map": "/online-photobooth/static/js/main.5834d5dd.js.map"
+    "main.c8e310a1.css.map": "/online-photobooth/static/css/main.c8e310a1.css.map",
+    "main.14322ad5.js.map": "/online-photobooth/static/js/main.14322ad5.js.map"
   },
   "entrypoints": [
-    "static/css/main.31de6677.css",
-    "static/js/main.5834d5dd.js"
+    "static/css/main.c8e310a1.css",
+    "static/js/main.14322ad5.js"
   ]
 }
