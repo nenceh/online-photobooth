@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/online-photobooth/static/css/main.96f7c5fc.css",
-    "main.js": "/online-photobooth/static/js/main.31c32a0c.js",
+    "main.js": "/online-photobooth/static/js/main.05837f11.js",
     "static/js/434.fd0f2af9.chunk.js": "/online-photobooth/static/js/434.fd0f2af9.chunk.js",
     "static/js/513.1210e45b.chunk.js": "/online-photobooth/static/js/513.1210e45b.chunk.js",
     "static/js/384.99bca713.chunk.js": "/online-photobooth/static/js/384.99bca713.chunk.js",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.96f7c5fc.css",
-    "static/js/main.31c32a0c.js"
+    "static/js/main.05837f11.js"
   ]
 }
